@@ -1,0 +1,320 @@
+﻿ <!-- Blog Single Modal Start -->
+    <div class="blog-single modal fade" id="blog-single" tabindex="-1" role="dialog"
+        aria-labelledby="blogModalScrollable" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="blogModalScrollable">رویاهای خود را بنویسید</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <!--   Blog-single   Start -->
+                    <div class="pt-4 pb-5 text-muted">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-10 mx-auto blog">
+                                    <div class="rounded px-lg-5">
+                                        <div class="text-md-right">
+                                            <h4 class="mb-4">بهترین راه برای تبدیل شدن به یک طراح وب خوب</h4>
+                                            <div class="image-border">
+                                                <img src="~/img/blog-01.jpg" alt="">
+                                            </div>
+                                            <span class="d-inline-block py-4"> 1 فروردین 1398
+                                                / By <span class="purple-color text-right"> جان دوئه. </span>
+                                            </span>
+                                            <p>این کلمات در اینجا قرار دارند تا برداشت اولیه از چگونگی نمایش متن واقعی
+                                                در ارائه نهایی خود را به خواننده ارائه دهند. این یک نسخه ساختگی است. این
+                                                به معنای خواندن نیست. این مقاله فقط برای نشان دادن ظاهر و نوشتار متن
+                                                نوشتار تمام شده ارسال شده است. این کلمات در اینجا قرار دارند تا برداشت
+                                                اولیه از چگونگی نمایش متن واقعی در ارائه نهایی خود را به خواننده ارائه
+                                                دهند. فقط برای نمایش.</p>
+                                            <div class="px-md-5 px-3 py-4 quotation">
+                                                <i class="base-color lni-quotation size-md"></i>
+                                                <h6 class="base-color font-italic mb-0">لورم ایپسوم متن ساختگی با تولید
+                                                    سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.</h6>
+                                            </div>
+                                            <p class="my-3">این کلمات در اینجا قرار دارند تا برداشت اولیه از چگونگی
+                                                نمایش متن واقعی در ارائه نهایی خود را به خواننده ارائه دهند. این یک نسخه
+                                                ساختگی است. این به معنای خواندن نیست. این مقاله فقط برای نشان دادن ظاهر
+                                                و نوشتار متن نوشتار تمام شده ارسال شده است. این کلمات در اینجا قرار
+                                                دارند تا برداشت اولیه از چگونگی نمایش متن واقعی در ارائه نهایی خود را به
+                                                خواننده ارائه دهند. فقط برای نمایش.</p>
+                                            <ul class="list-unstyled mt-4 checkmark-list">
+                                                <!-- Item-01 -->
+                                                <li class="mb-2">
+                                                    <span class="ml-1">لورم ایپسوم متن ساختگی است.</span>
+                                                </li>
+                                                <!-- Item-02 -->
+                                                <li class="mb-2">
+                                                    <span class="ml-1">لورم ایپسوم متن ساختگی است.</span>
+                                                </li>
+                                                <!-- Item-03 -->
+                                                <li class="mb-2">
+                                                    <span class="ml-1">لورم ایپسوم متن ساختگی است.</span>
+                                                </li>
+                                            </ul>
+
+                                            <!--Blog Reply-->
+                                            <div class="contact mt-4">
+                                                <div class="contact-form">
+                                                    <h2 class="text-right mb-4">پاسخ دهید</h2>
+                                                    <form>
+                                                        <div class="row">
+                                                            <div class="col-lg-6 form-item">
+                                                                <div class="form-group">
+                                                                    <input name="name" id="blog-name" type="text"
+                                                                        class="form-control" placeholder="نام شما*"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-6 form-item">
+                                                                <div class="form-group">
+                                                                    <input name="email" id="blog-email" type="email"
+                                                                        class="form-control" placeholder="ایمیل شما*"
+                                                                        required>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-12 form-item">
+                                                                <div class="form-group">
+                                                                    <textarea name="comments" id="blog-comments"
+                                                                        rows="4" class="form-control"
+                                                                        placeholder="پیام شما..."></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-12 mt-4 text-left">
+                                                                <div class="button-border">
+                                                                    <a href="javascript:void(0)" class="pill-button"
+                                                                        onclick="sendEmail()">ارسال پیام</a>
+                                                                </div>
+                                                                <div class="toast" role="alert" aria-live="assertive"
+                                                                    aria-atomic="true" data-delay="400000">
+                                                                    <div class="toast-body d-inline-block"></div>
+                                                                    <a class="pr-3 close" data-dismiss="toast"
+                                                                        aria-label="Close">
+                                                                        <span aria-hidden="true"
+                                                                            class="lni-close size-xs "></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Blog Single Modal End  -->
+         <!--  Blog Start  -->
+        <section id="blog" class="blog active">
+            <div class="display-table">
+                <div class="display-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="text-center title">
+                                    <h2 class="text-dark">مقالات <span class="base-color">جدید</span></h2>
+                                    <p class="text-muted mb-5 max-width-450">در یک زمینه حرفه ای غالباً اتفاق می افتد که
+                                        مشتریان خصوصی از انتشار گزارشی جلوگیری می کنند.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!--  Item 01 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="~/img/blog-01.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">02 خرداد , 1398 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">5</span>
+                                            </li>
+                                        </ul>
+                                        <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single"> بهترین نسخه خودتان</a>
+                                        </h5>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single">بیشتر بخوانید...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Item 02 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="~/img/blog-02.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">08 خرداد, 1398 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">3</span>
+                                            </li>
+                                        </ul>
+                                        <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single"> 5 نکته در طراحی UI/UX وب سایت</a></h5>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single">بیشتر بخوانید...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Item 03 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="~/img/blog-03.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">12 خرداد, 1398 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">8</span>
+                                            </li>
+                                        </ul>
+                                        <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single"> رویاهای خود را
+                                                بنویسید</a></h5>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single">بیشتر بخوانید...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Item 04 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="~/img/blog-04.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">20 خرداد, 1398 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">2</span>
+                                            </li>
+                                        </ul>
+                                        <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single"> بهترین نسخه خودتان</a>
+                                        </h5>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single">بیشتر بخوانید...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Item 05 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="~/img/blog-05.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">20 خرداد, 1398 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">10</span>
+                                            </li>
+                                        </ul>
+                                        <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single"> 5 نکته در طراحی UI/UX وب سایت</a></h5>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single">بیشتر بخوانید...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--  Item 06 -->
+                            <div class="col-lg-4">
+                                <div class="blog-item box-border">
+                                    <div class="blog-image">
+                                        <div class="blog-intro">
+                                            <img src="~/img/blog-06.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                    <div class="blog-content">
+                                        <ul class="list-inline mt-4">
+                                            <li class="list-inline-item">
+                                                <i class="lni-calendar base-color"></i>
+                                                <span class="text-muted">25 خرداد, 1398 </span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <i class="lni-comment base-color"></i>
+                                                <span class="text-muted">12</span>
+                                            </li>
+                                        </ul>
+                                        <h5 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single"> رویاهای خود را
+                                                بنویسید</a></h5>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از
+                                            طراحان گرافیک است.</p>
+                                        <div class="blog-link">
+                                            <a class="base-color" href="javascript:void(0)" target="_blank"
+                                                data-toggle="modal" data-target="#blog-single">بیشتر بخوانید...</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--   Blog End   -->

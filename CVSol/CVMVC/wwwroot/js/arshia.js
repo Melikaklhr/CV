@@ -69,36 +69,6 @@ $(".hire-me").on("click" , function () {
     $('#main').children($id).addClass('active');
 });
 
-// -------------------------------------------------------------
-//   Color Panel
-// -------------------------------------------------------------
-function ColorPallet() {
-
-    "use strict";
-
-    $("ul.pattern .color1").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/default.css")
-    });
-    $("ul.pattern .color2").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/orange-color.css")
-    });
-    $("ul.pattern .color3").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/blue-color.css")
-    });
-    $("ul.pattern .color4").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/green-color.css")
-    });
-    $("ul.pattern .color5").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/yellow-color.css")
-    });
-    $("ul.pattern .color6").click(function () {
-        return $("#option-color").attr("href", "assets/css/color/pink-color.css")
-    });
-    $("#color-switcher .pallet-button").click(function () {
-        $("#color-switcher .color-pallet").toggleClass('show')
-    })
-
-}
 
 // /*-------------------------
 //     MENU TOGGLER

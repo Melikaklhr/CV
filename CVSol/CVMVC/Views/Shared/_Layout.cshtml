@@ -1,48 +1,90 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
+
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - CVMVC</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ارشیا - قالب کاملا ریسپانسیو</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Retrina Group" />
+
+    <!--  FavIcon  -->
+    <link rel="shortcut icon" href="~/img/favicon.ico">
+
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+    <!-- Plugin Css -->
+    <link rel="stylesheet" href="~/css/plugins.css">
+    <!-- Colors Css -->
+    <link rel="stylesheet" href="~/css/color/yellow-color.css" id="option-color">
+    <!--  Custom Style CSS  -->
+    <link rel="stylesheet" href="~/css/style.css">
+    <!--  Rtl Style CSS  -->
+    <link rel="stylesheet" href="~/css/rtl-style.css">
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">CVMVC</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+
+<body data-spy="scroll" data-target="#scrollspy" data-offset="1" class="rtl flat-demo arshia-dark">
+
+    <!--  Pre Loader  -->
+    <div id="overlayer"></div>
+    <span class="loader"></span>
+
+    <main id="main">
+
+        <!--   Header Start -->
+        <header>
+            <div class="header-navbar h-100">
+                <a class="navbar-brand" href="#"><b>ا</b><span>Melika</span></a>
+                <ul class="list-group menu text-center" id="menu">
+                    <li class="list-group-item"><a class="active" asp-controller="Home" asp-action="index">               <i class="fa fa-home"></i><span>خانه</span></a></li>
+                    <li class="list-group-item"><a  asp-controller="About" asp-action="index"  >             <i class="fa fa-user"></i><span>درباره من</span></a> </li>
+                    <li class="list-group-item"><a  asp-controller="Resume" asp-action="index" >           <i class="fa fa-address-book"></i><span>رزومه</span></a></li>
+                    <li class="list-group-item"><a   asp-controller="portfolio" asp-controller="index">  <i class="fa fa-briefcase"></i><span>نمونه کارها</span></a></li>
+                    <li class="list-group-item"><a  asp-controller="blog" asp-controller="index" >          <i class="fa fa-file-text"></i><span>بلاگ</span></a></li>
+                    <li class="list-group-item"><a  asp-controller="contact" asp-controller="index">     <i class="fa fa-envelope-open"></i><span>تماس با من</span></a></li>
+                </ul>
+                <div class="menu-toggler">
+                    <span>
+                        <i class="text-white lni-menu"></i>
+                    </span>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
+        </header>
+        <!--   Header End   -->
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - CVMVC - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+       @RenderBody()
+
+     
+
+        <!--   Color Scheme  -->
+        <a class="color-scheme hide text-white bg-base-color d-inline-block" href="javascript:void(0)"><i
+                class="lni-night"></i></a>
+        <a class="color-scheme hide color-scheme-light text-white bg-base-color d-none" href="javascript:void(0)"><i
+                class="lni-sun"></i></a>
+
+      
+
+
+
+    </main>
+
+
+    <!--  JavaScripts  -->
+    <script src="~/js/jquery-3.4.1.min.js"></script>
+    <!--  Plugin Js  -->
+    <script src="~/js/plugins-rtl.js"></script>
+    <!--  Particle Js  -->
+    <script src="~/js/particles-01.min.js"></script>
+    <!--  particles app Js  -->
+    <script src="~/js/particles-01.app.js"></script>
+    <!--  Custom JS  -->
+    <script src="~/js/arshia-rtl.js"></script>
+
+
 </body>
+
 </html>
