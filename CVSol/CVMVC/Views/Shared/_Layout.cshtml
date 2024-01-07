@@ -41,11 +41,11 @@
                 <a class="navbar-brand" href="#"><b>ا</b><span>Melika</span></a>
                 <ul class="list-group menu text-center" id="menu">
                     <li class="list-group-item"><a class="active" asp-controller="Home" asp-action="index">               <i class="fa fa-home"></i><span>خانه</span></a></li>
-                    <li class="list-group-item"><a  asp-controller="About" asp-action="index"  >             <i class="fa fa-user"></i><span>درباره من</span></a> </li>
-                    <li class="list-group-item"><a  asp-controller="Resume" asp-action="index" >           <i class="fa fa-address-book"></i><span>رزومه</span></a></li>
-                    <li class="list-group-item"><a   asp-controller="portfolio" asp-controller="index">  <i class="fa fa-briefcase"></i><span>نمونه کارها</span></a></li>
-                    <li class="list-group-item"><a  asp-controller="blog" asp-controller="index" >          <i class="fa fa-file-text"></i><span>بلاگ</span></a></li>
-                    <li class="list-group-item"><a  asp-controller="contact" asp-controller="index">     <i class="fa fa-envelope-open"></i><span>تماس با من</span></a></li>
+                    <li class="list-group-item"><a asp-controller="About" asp-action="index">             <i class="fa fa-user"></i><span>درباره من</span></a> </li>
+                    <li class="list-group-item"><a asp-controller="Resume" asp-action="index">           <i class="fa fa-address-book"></i><span>رزومه</span></a></li>
+                    <li class="list-group-item"><a asp-controller="portfolio" asp-controller="index">  <i class="fa fa-briefcase"></i><span>نمونه کارها</span></a></li>
+                    <li class="list-group-item"><a asp-controller="blog" asp-controller="index">          <i class="fa fa-file-text"></i><span>بلاگ</span></a></li>
+                    <li class="list-group-item"><a asp-controller="contact" asp-controller="index">     <i class="fa fa-envelope-open"></i><span>تماس با من</span></a></li>
                 </ul>
                 <div class="menu-toggler">
                     <span>
@@ -55,18 +55,19 @@
             </div>
         </header>
         <!--   Header End   -->
+        @RenderBody()
 
-       @RenderBody()
 
-     
 
         <!--   Color Scheme  -->
-        <a class="color-scheme hide text-white bg-base-color d-inline-block" href="javascript:void(0)"><i
-                class="lni-night"></i></a>
-        <a class="color-scheme hide color-scheme-light text-white bg-base-color d-none" href="javascript:void(0)"><i
-                class="lni-sun"></i></a>
+        <a class="color-scheme hide text-white bg-base-color d-inline-block" href="javascript:void(0)">
+            <i class="lni-night"></i>
+        </a>
+        <a class="color-scheme hide color-scheme-light text-white bg-base-color d-none" href="javascript:void(0)">
+            <i class="lni-sun"></i>
+        </a>
 
-      
+
 
 
 
